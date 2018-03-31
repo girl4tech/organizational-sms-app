@@ -84,8 +84,8 @@ randomization
   //           history.last_week.indexOf(task.id) > -1 ){
   //             client.messages
   //               .create({
-  //                 to: '+14402926252',
-  //                 from: '+14407403792',
+  //                 to: '+************',
+  //                 from: '+**********',
   //                 body: task.message
   //               })
   //               .then(message => console.log(message.sid));
