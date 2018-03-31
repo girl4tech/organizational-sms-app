@@ -1,0 +1,74 @@
+<!-- Client: Mac Cameron
+Project: lifestyle / organizational web app for maccameron.com -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mac Cameron: Dice Goals 2018</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="listOuter">
+    <div class="listTitle">
+      <span id="listTitle">GOALS</span>
+    </div>
+    <section class="listInner">
+        <input class="input" id="items1" type="text" name="name">
+
+      <button id="add1" type="button" name="button">+</button>
+      <ul class="theList" id="list1">
+        <% for(var i=0; i<list1.length; i++) {%>
+          <li class="items">
+            <button class="remove"><i class="fas fa-times"></i></button>
+            <span id= <%= list1[i].simpleId %> ><%= list1[i].name %></span>
+            <button class="hidden edit" type="button" name="button">edit</button>
+          </li>
+          <% } %>
+        </ul>
+      </section>
+    </section>
+    <section class="listOuter">
+      <div class="listTitle">
+        <span id="listTitle">BUCKET LIST</span>
+      </div>
+      <section class="listInner">
+          <input class="input" id="items2" type="text" name="name">
+
+        <button id="add2" type="button" name="button">+</button>
+        <ul class="theList" id="list2">
+          <% for(var i=0; i<list2.length; i++) {%>
+            <li class="items">
+              <button class="remove"><i class="fas fa-times"></i></button>
+              <span id= <%= list2[i].simpleId %> ><%= list2[i].name %></span>
+              <button class="hidden edit" type="button" name="button">edit</button>
+            </li>
+            <% } %>
+        </ul>
+      </section>
+    </section>
+    <section class="listOuter">
+      <div class="listTitle">
+        <span id="listTitle">OTHER</span>
+      </div>
+      <section class="listInner">
+          <input class="input" id="items3" type="text" name="name">
+
+        <button id="add3" type="button" name="button">+</button>
+        <ul class="theList" id="list3">
+          <% for(var i=0; i<list3.length; i++) {%>
+            <li class="items">
+              <button class="remove"><i class="fas fa-times"></i></button>
+              <span id= <%= list3[i].simpleId %> ><%= list3[i].name %></span>
+              <button class="hidden edit" type="button" name="button">edit</button>
+            </li>
+            <% } %>
+        </ul>
+      </section>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
